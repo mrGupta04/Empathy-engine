@@ -106,15 +106,6 @@ Intensity scaling:
 - `web/assets/styles.css` - UI styling
 - `web/assets/app.js` - browser-side API client
 
-## Setup
-
-1. Create and activate a virtual environment.
-2. Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
 ## Run: CLI
 
 Interactive prompt:
@@ -212,47 +203,6 @@ Content-Type: application/json
 5. Show emotion changes and audio playback differences.
 6. Call `/ssml` and show generated prosody markup.
 
-## Submission Checklist
-
-Use this checklist before recording your demo or sharing the repository.
-
-### 1) Environment
-
-- [ ] Python virtual environment is active
-- [ ] Dependencies installed from `requirements.txt`
-- [ ] Internet connection available (required by edge-tts)
-
-### 2) Core Requirement Proof
-
-- [ ] CLI accepts text input
-- [ ] API accepts text input
-- [ ] At least 3 emotions shown in examples (positive/negative/neutral)
-- [ ] Vocal parameter modulation shown (rate, pitch, volume)
-- [ ] Emotion-to-voice mapping explained
-- [ ] Playable audio output generated (`.mp3`)
-
-### 3) Stretch Goal Proof
-
-- [ ] Granular emotions demonstrated (`inquisitive`, `concerned`, `surprised`)
-- [ ] Intensity scaling demonstrated with mild vs strong phrases
-- [ ] Web UI demo completed (`/`)
-- [ ] SSML output demonstrated (`/ssml` or `--show-ssml`)
-
-### 4) Suggested Screenshot Set
-
-- [ ] Home page with text entered
-- [ ] Result panel with emotion, score, intensity, voice profile
-- [ ] Audio player visible and loaded
-- [ ] SSML preview visible
-- [ ] CLI run showing output path
-- [ ] `POST /analyze` JSON response
-
-### 5) Final Submission
-
-- [ ] README has setup, run, API, and design mapping sections
-- [ ] Repository includes all source files and docs
-- [ ] `output/` contains at least one generated sample audio file
-
 ## Web UI
 
 Open this URL after starting the API server:
@@ -282,8 +232,3 @@ The UI includes:
 
 - Output format is MP3 for broad compatibility and easy streaming.
 - Exact voice quality depends on network conditions and selected Edge voice.
-
-## Submission Helper Docs
-
-- Demo checklist: merged into this README under "Submission Checklist"
-- API quick tests: `docs/api-quick-tests.ps1`
