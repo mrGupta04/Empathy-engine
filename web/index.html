@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Empathy Engine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/styles.css" />
+</head>
+<body>
+  <div class="bg-orb orb-a"></div>
+  <div class="bg-orb orb-b"></div>
+  <main class="shell">
+    <section class="hero reveal">
+     
+      <h1>The Empathy Engine</h1>
+    
+    </section>
+
+    <section class="panel reveal delay-1">
+      <label for="inputText">Input Text</label>
+      <textarea id="inputText" rows="6" placeholder="Type customer-facing text here..."></textarea>
+      <div class="actions">
+        <button id="synthesizeBtn" type="button">Synthesize Voice</button>
+      </div>
+    </section>
+
+    <section class="panel reveal delay-2">
+      <h2>Analysis</h2>
+      <div id="meta" class="meta-grid">
+        <div><span>Emotion</span><strong id="emotion">-</strong></div>
+        <div><span>Sentiment</span><strong id="sentiment">-</strong></div>
+        <div><span>Intensity</span><strong id="intensity">-</strong></div>
+      </div>
+      <details>
+        <summary>Voice Profile</summary>
+        <pre id="voiceProfile">{}</pre>
+      </details>
+      <details>
+        <summary>SSML Preview</summary>
+        <pre id="ssml">(none)</pre>
+      </details>
+      <audio id="player" controls></audio>
+      <p id="status" class="status"></p>
+    </section>
+  </main>
+  <script src="/assets/app.js"></script>
+</body>
+</html>
